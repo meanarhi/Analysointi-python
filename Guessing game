@@ -1,1 +1,41 @@
+#1
+print("Please, guess my name!")
 
+name = "Mea"
+
+
+while True:
+
+    guess = input("Your guess: ")
+
+    if guess == name:
+        print("Congratulations!")
+        break  
+    else:
+        print("That is incorrect.")
+        
+        if input("Do you want to quit (y/n: ").lower() == "y":
+            print("Thank you for playing!")
+            break  
+
+#2
+
+print("Guess my name!")
+
+name = "Mea"
+
+guess_count =0
+
+while True:
+    guess = input("Your guess")
+    guess_count +=1
+
+    if guess == name:
+        print("Congratulations!")
+        print(f"Guesses: ",  guess_count)
+        break
+    else:
+        quit = input("Do you want to quit (y/n)")
+        if quit.lower() == "y":
+            print(f"Guesses:", + guess_count)
+            break
