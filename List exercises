@@ -1,1 +1,19 @@
+# exercise 1 
+
+mylist = ["Sohva", "Pöytä", "Tv", "Tuoli"]
+print(mylist)
+
+print(mylist[:2])
+
+print(mylist[0])
+
+
+#exercise 2
+import random
+
+thrownDiceNumbers = [random.randint(1,6) for _ in range(5)]
+
+print(thrownDiceNumbers)
+print(sum(thrownDiceNumbers))
+print(max(thrownDiceNumbers))
 
